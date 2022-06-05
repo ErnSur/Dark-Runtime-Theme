@@ -1,0 +1,656 @@
+:root {
+    --unity-metrics-default-font_normal_size: 12px;
+    --unity-metrics-default-font_semi_small_size: 11px;
+    --unity-metrics-default-font_tiny_size: 9px;
+    --unity-metrics-default-font_small_size: 10px;
+    --unity-metrics-default-font_big_size: 14px;
+    --unity-metrics-default-font_very_big_size: 19px;
+    --unity-metrics-single_line-height: 18px;
+    --unity-metrics-single_line_large-height: 20px;
+    --unity-metrics-single_line_small-height: 16px;
+    --unity-colors-error-text: rgb(211, 34, 34);
+    --unity-colors-warning-text: rgb(244, 188, 2);
+    --unity-colors-play_mode-background: rgb(96, 96, 96);
+    --unity-colors-default-text: rgb(210, 210, 210);
+    --unity-colors-default-text-hover: rgb(189, 189, 189);
+    --unity-colors-default-background: rgb(40, 40, 40);
+    --unity-colors-default-border: rgb(35, 35, 35);
+    --unity-metrics-default-border_radius: 3px;
+    --unity-colors-highlight-background: rgb(44, 93, 135);
+    --unity-colors-highlight-background-hover: rgba(255, 255, 255, 0.06);
+    --unity-colors-highlight-background-hover-lighter: rgb(95, 95, 95);
+    --unity-colors-highlight-background-inactive: rgb(77, 77, 77);
+    --unity-colors-highlight-text: rgb(76, 126, 255);
+    --unity-colors-highlight-text-inactive: rgb(255, 255, 255);
+    --unity-colors-alternated_rows-background: rgb(63, 63, 63);
+    --unity-colors-link-text: rgb(76, 126, 255);
+    --unity-colors-visited_link-text: rgb(255, 0, 255);
+    --unity-colors-app_toolbar-background: rgb(25, 25, 25);
+    --unity-colors-app_toolbar_button-background: rgb(56, 56, 56);
+    --unity-colors-app_toolbar_button-background-hover: rgb(66, 66, 66);
+    --unity-colors-app_toolbar_button-background-checked: rgb(106, 106, 106);
+    --unity-colors-app_toolbar_button-background-pressed: rgb(106, 106, 106);
+    --unity-colors-app_toolbar_button-border: rgb(25, 25, 25);
+    --unity-colors-app_toolbar_button-border_accent: rgb(34, 34, 34);
+    --unity-colors-box-background: rgba(40, 40, 40, 0.3);
+    --unity-colors-box-border: transparent;
+    --unity-colors-button-background: rgb(88, 88, 88);
+    --unity-colors-button-background-pressed: rgb(70, 96, 124);
+    --unity-colors-button-background-hover_pressed: rgb(79, 101, 127);
+    --unity-colors-button-background-focus: rgb(110, 110, 110);
+    --unity-colors-button-background-hover: rgb(103, 103, 103);
+    --unity-colors-button-border: rgb(48, 48, 48);
+    --unity-colors-button-border-pressed: rgb(13, 13, 13);
+    --unity-colors-button-border_accent-focus: rgb(123, 174, 250);
+    --unity-colors-button-border_accent: rgb(36, 36, 36);
+    --unity-colors-button-text: rgb(238, 238, 238);
+    --unity-colors-dropdown-background: rgb(81, 81, 81);
+    --unity-colors-dropdown-background-hover: rgb(88, 88, 88);
+    --unity-colors-dropdown-border: rgb(48, 48, 48);
+    --unity-colors-dropdown-border_accent: rgb(36, 36, 36);
+    --unity-colors-dropdown-text: rgb(228, 228, 228);
+    --unity-colors-headerbar-background: rgb(60, 60, 60);
+    --unity-colors-headerbar_column-background: rgb(60, 60, 60);
+    --unity-colors-headerbar_column-background-pressed: rgb(80, 80, 80);
+    --unity-colors-headerbar_column-background-hover: rgb(70, 70, 70);
+    --unity-colors-helpbox-background: rgba(96, 96, 96, 0.2);
+    --unity-colors-helpbox-border: rgb(35, 35, 35);
+    --unity-colors-helpbox-text: rgb(189, 189, 189);
+    --unity-colors-input_field-background: rgb(42, 42, 42);
+    --unity-colors-input_field-border: rgb(33, 33, 33);
+    --unity-colors-input_field-border-focus: rgb(58, 121, 187);
+    --unity-colors-input_field-border-hover: rgb(101, 101, 101);
+    --unity-colors-input_field-border_accent: rgb(13, 13, 13);
+    --unity-colors-label-text: rgb(196, 196, 196);
+    --unity-colors-label-text-focus: rgb(129, 180, 255);
+    --unity-colors-object_field-background: rgb(40, 40, 40);
+    --unity-colors-object_field-border: rgb(32, 32, 32);
+    --unity-colors-object_field-border-focus: rgb(58, 121, 187);
+    --unity-colors-object_field-border-hover: rgb(101, 101, 101);
+    --unity-colors-object_field_button-background: rgb(55, 55, 55);
+    --unity-colors-object_field_button-background-hover: rgb(76, 76, 76);
+    --unity-colors-popup-background: rgb(49, 49, 49);
+    --unity-colors-preview-background: rgb(49, 49, 49);
+    --unity-colors-preview-border: rgb(35, 35, 35);
+    --unity-colors-preview-text: rgb(189, 189, 189);
+    --unity-colors-preview_overlay-text: rgb(222, 222, 222);
+    --unity-colors-scrollbar_groove-background: rgba(0, 0, 0, 0.05);
+    --unity-colors-scrollbar_groove-border: rgba(0, 0, 0, 0.1);
+    --unity-colors-scrollbar_thumb-background: rgb(95, 95, 95);
+    --unity-colors-scrollbar_thumb-background-hover: rgb(104, 104, 104);
+    --unity-colors-scrollbar_thumb-border: rgb(50, 50, 50);
+    --unity-colors-scrollbar_thumb-border-hover: rgb(104, 104, 104);
+    --unity-colors-scrollbar_button-background: rgba(0, 0, 0, 0.05);
+    --unity-colors-scrollbar_button-background-hover: rgb(73, 73, 73);
+    --unity-colors-progress-background: rgb(48, 48, 48);
+    --unity-colors-slider_groove-background: rgb(94, 94, 94);
+    --unity-colors-slider_groove-background-disabled: rgb(87, 87, 87);
+    --unity-colors-slider_thumb-background: rgb(153, 153, 153);
+    --unity-colors-slider_thumb-background-disabled: rgb(102, 102, 102);
+    --unity-colors-slider_thumb-background-hover: rgb(234, 234, 234);
+    --unity-colors-slider_thumb-border: rgb(153, 153, 153);
+    --unity-colors-slider_thumb-border-disabled: rgb(102, 102, 102);
+    --unity-colors-slider_thumb_halo-background: rgba(16, 111, 205, 0.5);
+    --unity-colors-tab-background: rgb(53, 53, 53);
+    --unity-colors-tab-background-checked: rgb(60, 60, 60);
+    --unity-colors-tab-background-hover: rgb(48, 48, 48);
+    --unity-colors-tab-text: rgb(189, 189, 189);
+    --unity-colors-toolbar-background: rgb(60, 60, 60);
+    --unity-colors-toolbar-border: rgb(35, 35, 35);
+    --unity-metrics-toolbar-height: 21px;
+    --unity-colors-toolbar_button-background: rgb(60, 60, 60);
+    --unity-colors-toolbar_button-background-hover: rgb(70, 70, 70);
+    --unity-colors-toolbar_button-background-checked: rgb(80, 80, 80);
+    --unity-colors-toolbar_button-background-focus: rgb(70, 70, 70);
+    --unity-colors-toolbar_button-border: rgb(35, 35, 35);
+    --unity-colors-toolbar_button-text: rgb(196, 196, 196);
+    --unity-colors-toolbar_button-text-hover: rgb(189, 189, 189);
+    --unity-colors-toolbar_button-text-checked: rgb(196, 196, 196);
+    --unity-metrics-toolbar_button-height: 20px;
+    --unity-colors-window-background: rgb(56, 56, 56);
+    --unity-colors-window-border: rgb(36, 36, 36);
+    --unity-colors-window-text: rgb(189, 189, 189);
+    --unity-colors-inspector_titlebar-background: rgb(62, 62, 62);
+    --unity-colors-inspector_titlebar-background-hover: rgb(71, 71, 71);
+    --unity-colors-inspector_titlebar-border: rgb(26, 26, 26);
+    --unity-colors-inspector_titlebar-border_accent: rgb(48, 48, 48);
+    --unity-metrics-inspector_titlebar-height: 22px;
+    --unity-colors-tooltip-background: rgb(55, 55, 55);
+    --unity-colors-tooltip-border: rgb(25, 25, 25);
+    --unity-theme-background-color-1: rgb(88, 88, 88);
+    --unity-theme-background-color-2: rgb(103, 103, 103);
+    --unity-theme-background-color-3: rgb(53, 53, 53);
+    --unity-theme-background-color-4: rgb(110, 110, 110);
+    --unity-theme-background-color-5: rgb(60, 60, 60);
+    --unity-theme-background-color-6: rgb(70, 70, 70);
+    --unity-theme-background-color-7: rgb(80, 80, 80);
+    --unity-theme-background-color-8: rgb(81, 81, 81);
+    --unity-theme-background-color-9: rgb(48, 48, 48);
+    --unity-theme-background-color-10: rgb(53, 53, 53);
+    --unity-theme-background-color-11: rgb(94, 94, 94);
+    --unity-theme-background-color-12: rgb(153, 153, 153);
+    --unity-theme-background-color-13: rgb(234, 234, 234);
+    --unity-theme-background-color-14: rgb(87, 87, 87);
+    --unity-theme-background-color-15: rgb(102, 102, 102);
+    --unity-theme-background-color-16: rgba(16, 111, 205, 0.5);
+    --unity-theme-background-color-17: rgb(56, 56, 56);
+    --unity-theme-background-color-50: rgb(44, 93, 135);
+    --unity-theme-background-color-51: rgba(255, 255, 255, 0.06);
+    --unity-theme-background-color-52: rgb(77, 77, 77);
+    --unity-theme-background-color-53: rgb(42, 42, 42);
+    --unity-theme-background-color-54: rgb(40, 40, 40);
+    --unity-theme-background-color-55: rgb(55, 55, 55);
+    --unity-theme-background-color-56: rgb(76, 76, 76);
+    --unity-theme-background-color-57: rgba(0, 0, 0, 0.05);
+    --unity-theme-background-color-58: rgb(95, 95, 95);
+    --unity-theme-background-color-59: rgb(73, 73, 73);
+    --unity-theme-background-color-60: rgb(104, 104, 104);
+    --unity-theme-background-color-80: rgb(63, 63, 63);
+    --unity-theme-background-color-81: rgba(40, 40, 40, 0.3);
+    --unity-theme-background-color-82: rgb(25, 25, 25);
+    --unity-theme-background-color-83: rgb(106, 106, 106);
+    --unity-theme-background-color-84: rgb(66, 66, 66);
+    --unity-theme-background-color-85: rgb(49, 49, 49);
+    --unity-theme-background-color-86: rgba(96, 96, 96, 0.2);
+    --unity-theme-background-color-87: rgb(96, 96, 96);
+    --unity-theme-background-color-88: rgb(62, 62, 62);
+    --unity-theme-background-color-89: rgb(71, 71, 71);
+    --unity-theme-background-color-90: rgb(48, 48, 48);
+    --unity-theme-background-color-91: rgb(70, 96, 124);
+    --unity-theme-background-color-92: rgb(79, 101, 127);
+    --unity-theme-border-color-1: rgb(13, 13, 13);
+    --unity-theme-border-color-2: rgb(16, 16, 16);
+    --unity-theme-border-color-3: rgb(21, 21, 21);
+    --unity-theme-border-color-4: rgb(26, 26, 26);
+    --unity-theme-border-color-5: rgb(32, 32, 32);
+    --unity-theme-border-color-6: rgb(33, 33, 33);
+    --unity-theme-border-color-7: rgb(35, 35, 35);
+    --unity-theme-border-color-8: rgb(36, 36, 36);
+    --unity-theme-border-color-9: rgb(40, 40, 40);
+    --unity-theme-border-color-10: rgb(48, 48, 48);
+    --unity-theme-border-color-11: rgb(50, 50, 50);
+    --unity-theme-border-color-12: rgb(51, 51, 51);
+    --unity-theme-border-color-13: rgb(58, 121, 187);
+    --unity-theme-border-color-14: rgb(99, 99, 99);
+    --unity-theme-border-color-15: rgb(101, 101, 101);
+    --unity-theme-border-color-16: rgb(102, 102, 102);
+    --unity-theme-border-color-17: rgb(104, 104, 104);
+    --unity-theme-border-color-18: rgb(13, 13, 13);
+    --unity-theme-border-color-19: rgba(0, 0, 0, 0.1);
+    --unity-theme-border-color-20: rgb(34, 34, 34);
+    --unity-theme-border-color-21: rgb(25, 25, 25);
+    --unity-theme-border-color-22: rgb(153, 153, 153);
+    --unity-theme-border-color-23: rgb(204, 204, 204);
+    --unity-theme-border-color-24: rgb(123, 174, 250);
+    --unity-theme-text-color-0: rgb(255, 255, 255);
+    --unity-theme-text-color-1: rgb(210, 210, 210);
+    --unity-theme-text-color-2: rgb(196, 196, 196);
+    --unity-theme-text-color-3: rgb(189, 189, 189);
+    --unity-theme-text-color-4: rgb(228, 228, 228);
+    --unity-theme-text-color-5: rgb(255, 255, 255);
+    --unity-theme-text-color-6: rgb(76, 126, 255);
+    --unity-theme-text-color-7: rgb(238, 238, 238);
+    --unity-theme-text-color-8: rgb(211, 34, 34);
+    --unity-theme-text-color-9: rgb(244, 188, 2);
+    --unity-theme-text-color-10: rgb(129, 180, 255);
+    --unity-theme-text-color-11: rgb(76, 126, 255);
+    --unity-theme-text-color-12: rgb(255, 0, 255);
+    --unity-theme-text-color-13: rgb(222, 222, 222);
+    --unity-theme-text-color-14: rgb(166, 166, 166);
+    --unity-icons-arrow_right: resource("Builtin Skins/DarkSkin/Images/ArrowNavigationRight.png");
+    --unity-icons-arrow_left: resource("Builtin Skins/DarkSkin/Images/ArrowNavigationLeft.png");
+    --unity-icons-clear: resource("UIPackageResources/Images/d_clear.png");
+    --unity-icons-color_picker: resource("UIPackageResources/Images/d_color_picker.png");
+    --unity-icons-console_entry_error: resource("Icons/d_console.erroricon.png");
+    --unity-icons-console_entry_error_small: resource("Icons/d_console.erroricon.sml.png");
+    --unity-icons-console_entry_info: resource("Icons/d_console.infoicon.png");
+    --unity-icons-console_entry_info_small: resource("Icons/d_console.infoicon.sml.png");
+    --unity-icons-console_entry_warn: resource("Icons/d_console.warnicon.png");
+    --unity-icons-console_entry_warn_small: resource("Icons/d_console.warnicon.sml.png");
+    --unity-icons-dropdown: resource("UIPackageResources/Images/d_dropdown.png");
+    --unity-icons-dropdown_toggle: resource("UIPackageResources/Images/d_dropdown_toggle.png");
+    --unity-icons-foldout: resource("UIPackageResources/Images/d_IN_foldout.png");
+    --unity-icons-foldout-checked_focus: resource("UIPackageResources/Images/d_IN_foldout_focus_on.png");
+    --unity-icons-foldout-checked_pressed: resource("UIPackageResources/Images/d_IN_foldout_act_on.png");
+    --unity-icons-foldout-focus: resource("UIPackageResources/Images/d_IN_foldout_focus.png");
+    --unity-icons-foldout-pressed: resource("UIPackageResources/Images/d_IN_foldout_act.png");
+    --unity-icons-foldout-checked: resource("UIPackageResources/Images/d_IN_foldout_on.png");
+    --unity-icons-link: resource("Icons/d_UnLinked.png");
+    --unity-icons-link-checked: resource("Icons/d_Linked.png");
+    --unity-icons-lock: resource("Builtin Skins/DarkSkin/Images/IN LockButton.png");
+    --unity-icons-lock-checked: resource("Builtin Skins/DarkSkin/Images/IN LockButton on.png");
+    --unity-icons-lock-checked_pressed: resource("Builtin Skins/DarkSkin/Images/IN LockButton on act.png");
+    --unity-icons-lock-pressed: resource("Builtin Skins/DarkSkin/Images/IN LockButton act.png");
+    --unity-icons-minus: resource("UIPackageResources/Images/d_ol_minus.png");
+    --unity-icons-minus-hover: resource("UIPackageResources/Images/d_ol_minus_act.png");
+    --unity-icons-pane_options: resource("Builtin Skins/DarkSkin/Images/pane options.png");
+    --unity-icons-picker: resource("UIPackageResources/Images/d_pick.png");
+    --unity-icons-plus: resource("UIPackageResources/Images/d_ol_plus.png");
+    --unity-icons-plus-hover: resource("UIPackageResources/Images/d_ol_plus_act.png");
+    --unity-icons-profiler_timeline_digdown_arrow: resource("Profiler/d_ProfilerTimelineDigDownArrow.png");
+    --unity-icons-profiler_timeline_rollup_arrow: resource("Profiler/d_ProfilerTimelineRollUpArrow.png");
+    --unity-icons-pulldown: resource("UIPackageResources/Images/d_dropdown.png");
+    --unity-icons-scroll_down: resource("UIPackageResources/Images/d_scrolldown.png");
+    --unity-icons-scroll_left: resource("UIPackageResources/Images/d_scrollleft.png");
+    --unity-icons-scroll_right: resource("UIPackageResources/Images/d_scrollright.png");
+    --unity-icons-scroll_up: resource("UIPackageResources/Images/d_scrollup.png");
+    --unity-icons-search: resource("UIPackageResources/Images/d_search_icon.png");
+    --unity-icons-search_menu: resource("UIPackageResources/Images/d_search_menu.png");
+    --unity-icons-shuriken_toggle-checked: resource("Builtin Skins/DarkSkin/Images/ShurikenToggleNormalOn.png");
+    --unity-icons-shuriken_toggle-checked_focus: resource("Builtin Skins/DarkSkin/Images/ShurikenToggleFocusedOn.png");
+    --unity-icons-shuriken_toggle-checked_hover: resource("Builtin Skins/DarkSkin/Images/ShurikenToggleHoverOn.png");
+    --unity-icons-shuriken_toggle_bg: resource("Builtin Skins/DarkSkin/Images/ShurikenToggleNormal.png");
+    --unity-icons-shuriken_toggle_bg-focus: resource("Builtin Skins/DarkSkin/Images/ShurikenToggleFocused.png");
+    --unity-icons-shuriken_toggle_bg-focus_mixed: resource("Builtin Skins/DarkSkin/Images/ShurikenToggleFocusedMixed.png");
+    --unity-icons-shuriken_toggle_bg-hover: resource("Builtin Skins/DarkSkin/Images/ShurikenToggleHover.png");
+    --unity-icons-shuriken_toggle_bg-hover_mixed: resource("Builtin Skins/DarkSkin/Images/ShurikenToggleHoverMixed.png");
+    --unity-icons-shuriken_toggle_bg-mixed: resource("Builtin Skins/DarkSkin/Images/ShurikenToggleNormalMixed.png");
+    --unity-icons-toggle-checked: resource("UIPackageResources/Images/d_toggle_on.png");
+    --unity-icons-toggle-checked_focus: resource("UIPackageResources/Images/d_toggle_on_focus.png");
+    --unity-icons-toggle-checked_hover: resource("UIPackageResources/Images/d_toggle_on_hover.png");
+    --unity-icons-toggle-hover_mixed: resource("UIPackageResources/Images/d_toggle_on_hover.png");
+    --unity-icons-toggle-focus_mixed: resource("UIPackageResources/Images/d_toggle_on_focus.png");
+    --unity-icons-toggle-mixed: resource("UIPackageResources/Images/d_toggle_on.png");
+    --unity-icons-toggle_bg: resource("UIPackageResources/Images/d_toggle_bg.png");
+    --unity-icons-toggle_bg-focus: resource("UIPackageResources/Images/d_toggle_bg_focus.png");
+    --unity-icons-toggle_bg-focus_mixed: resource("UIPackageResources/Images/d_toggle_mixed_bg_focus.png");
+    --unity-icons-toggle_bg-hover: resource("UIPackageResources/Images/d_toggle_bg_hover.png");
+    --unity-icons-toggle_bg-hover_mixed: resource("UIPackageResources/Images/d_toggle_mixed_bg_hover.png");
+    --unity-icons-toggle_bg-mixed: resource("UIPackageResources/Images/d_toggle_mixed_bg.png");
+    --unity-icons-window_button_close: resource("Icons/d_winbtn_win_close.png");
+    --unity-icons-window_button_max: resource("Icons/d_winbtn_win_max.png");
+    --unity-icons-window_button_restore: resource("Icons/d_winbtn_win_restore.png");
+}
+
+.unity-theme-env-variables {
+    --theme-default-border-radius: 3px;
+    --enable-style-hovering: true;
+    --single-line-height: 18px;
+    --theme-default-control-margin: 3px 3px 2px 3px;
+    --theme-default-top-margin: 1px;
+    --theme-default-bottom-margin: 1px;
+    --theme-default-left-margin: 3px;
+    --theme-default-right-margin: 3px;
+    --theme-input-text-cursor: text;
+    --window-toolbar-height: 21px;
+    --unity-font-size: 12px;
+    --unity-font-size-semi-small: 11px;
+    --unity-font-size-tiny: 9px;
+    --unity-font-size-small: 10px;
+    --unity-font-size-big: 14px;
+    --unity-font-size-very-big: 19px;
+    --unity-font-standard-padding-top: 2px;
+    --unity-font-standard-padding-top-with-border: 1px;
+    --unity-font-standard-padding-bottom: 0;
+    --unity-font-standard-padding-bottom-with-border: 0;
+    --unity-font-popup-padding-top: 0;
+    --unity-font-popup-padding-bottom: 1px;
+    --unity-font-button-padding-top: 1px;
+    --unity-font-button-padding-bottom: 1px;
+    --unity-toolbar-padding-top: 1;
+    --unity-toolbar-padding-bottom: 0;
+    --current-font: resource("UIPackageResources/Fonts/Inter/Inter-Regular SDF.asset");
+    --unity-text-color: rgb(210, 210, 210);
+    --unity-active-text-color: rgb(129, 180, 255);
+    --theme-window-text-color: rgb(189, 189, 189);
+    --theme-window-border-color: rgb(36, 36, 36);
+    --theme-window-background-color: rgba(57, 57, 57, 0.95);
+    --theme-label-text-color: rgb(196, 196, 196);
+    --theme-input-text-color: rgb(210, 210, 210);
+    --theme-input-text-color-selected: rgb(76, 126, 255);
+    --theme-input-text-color-hover: rgb(189, 189, 189);
+    --theme-input-background-color: rgb(42, 42, 42);
+    --theme-input-border-width: 1px;
+    --theme-input-border-color: rgb(33, 33, 33);
+    --theme-input-accent-border-color: rgb(13, 13, 13);
+    --theme-input-border-focus-width: 1px;
+    --theme-input-border-focus-color: rgb(58, 121, 187);
+    --theme-input-border-hover-width: 1px;
+    --theme-input-border-hover-color: rgb(101, 101, 101);
+    --theme-input-border-checked-width: 1px;
+    --theme-input-border-checked-color: rgb(101, 101, 101);
+    --theme-object-field-background-color: rgb(40, 40, 40);
+    --theme-object-field-border-width: 1px;
+    --theme-object-field-border-color: rgb(32, 32, 32);
+    --theme-object-field-border-hover-width: 1px;
+    --theme-object-field-border-hover-color: rgb(101, 101, 101);
+    --theme-object-field-border-focus-width: 1px;
+    --theme-object-field-border-focus-color: rgb(58, 121, 187);
+    --theme-object-field-border-checked-width: 1px;
+    --theme-object-field-border-checked-color: rgb(101, 101, 101);
+    --theme-object-field-button-background-color: rgb(55, 55, 55);
+    --theme-object-field-button-background-color-hover: rgb(76, 76, 76);
+    --theme-button-text-color: rgb(238, 238, 238);
+    --theme-button-background-color: rgb(88, 88, 88);
+    --theme-button-background-color-hover: rgb(103, 103, 103);
+    --theme-button-background-color-checked: rgb(70, 96, 124);
+    --theme-button-border-width: 1px;
+    --theme-button-border-color: rgb(48, 48, 48);
+    --theme-button-accent-border-color: rgb(36, 36, 36);
+    --theme-toolbar-background-color: rgb(60, 60, 60);
+    --theme-toolbar-button-text-color: rgb(196, 196, 196);
+    --theme-toolbar-button-text-color-hover: rgb(189, 189, 189);
+    --theme-toolbar-button-text-color-checked: rgb(196, 196, 196);
+    --theme-toolbar-button-border-width: 1px;
+    --theme-toolbar-button-border-color: rgb(21, 21, 21);
+    --theme-toolbar-button-border-2-width: 1px;
+    --theme-toolbar-button-border-2-color: rgb(35, 35, 35);
+    --theme-toolbar-button-background-color: rgb(60, 60, 60);
+    --theme-toolbar-button-background-color-hover: rgb(70, 70, 70);
+    --theme-toolbar-button-background-color-checked: rgb(80, 80, 80);
+    --theme-toolbar-button-background-color-focus: rgb(70, 70, 70);
+    --theme-app-toolbar-button-border-width: 1px;
+    --theme-app-toolbar-button-border-color: rgb(25, 25, 25);
+    --theme-dropdown-border-width: 1px;
+    --theme-dropdown-border-color: rgb(48, 48, 48);
+    --theme-dropdown-accent-border-color: rgb(36, 36, 36);
+    --theme-dropdown-text-color: rgb(228, 228, 228);
+    --theme-dropdown-background-color: rgb(81, 81, 81);
+    --theme-dropdown-background-color-hover: rgb(88, 88, 88);
+    --theme-scrollbar-thumb-background-color: rgb(95, 95, 95);
+    --theme-scrollbar-thumb-border-width: 1px;
+    --theme-scrollbar-thumb-border-color: rgb(50, 50, 50);
+    --theme-scrollbar-thumb-background-color-hover: rgb(104, 104, 104);
+    --theme-scrollbar-border-color: rgba(0, 0, 0, 0.1);
+    --theme-scrollbar-background-color: rgba(0, 0, 0, 0.05);
+    --theme-scrollbar-button-background-color: rgba(0, 0, 0, 0.05);
+    --theme-scrollbar-button-background-color-hover: rgb(73, 73, 73);
+    --theme-slider-background-color: rgb(94, 94, 94);
+    --theme-slider-background-color-disabled: rgb(87, 87, 87);
+    --theme-slider-thumb-background-color: rgb(153, 153, 153);
+    --theme-slider-thumb-background-color-hover: rgb(234, 234, 234);
+    --theme-slider-thumb-background-color-disabled: rgb(102, 102, 102);
+    --theme-slider-thumb-border-width: 1px;
+    --theme-slider-thumb-border-color: rgb(153, 153, 153);
+    --theme-slider-thumb-border-color-disabled: rgb(102, 102, 102);
+    --theme-slider-thumb-extent-background-color-focus: rgba(16, 111, 205, 0.5);
+    --theme-box-background-color: rgba(40, 40, 40, 0.3);
+    --theme-box-border-color: transparent;
+    --theme-help-box-background-color: rgb(63, 63, 63);
+    --theme-help-box-border-color: rgb(26, 26, 26);
+    --theme-help-box-icon-info: resource("UIPackageResources/Images/d_console.infoicon.png");
+    --theme-help-box-icon-warning: resource("UIPackageResources/Images/d_console.warnicon.png");
+    --theme-help-box-icon-error: resource("UIPackageResources/Images/d_console.erroricon.png");
+    --theme-list-view-drag-hover-bar-color: rgb(51, 86, 218);
+    --theme-list-view-drag-hover-item-background-color: rgb(62, 95, 150);
+    --theme-image-pick: resource("UIPackageResources/Images/d_pick_uielements.png");
+    --theme-image-toggle-bg: resource("UIPackageResources/Images/d_toggle_bg.png");
+    --theme-image-toggle-bg-hover: resource("UIPackageResources/Images/d_toggle_bg_hover.png");
+    --theme-image-toggle-bg-focus: resource("UIPackageResources/Images/d_toggle_bg_focus.png");
+    --theme-image-toggle-on: resource("UIPackageResources/Images/d_toggle_on.png");
+    --theme-image-toggle-on-hover: resource("UIPackageResources/Images/d_toggle_on_hover.png");
+    --theme-image-toggle-on-focus: resource("UIPackageResources/Images/d_toggle_on_focus.png");
+    --theme-image-foldout: resource("UIPackageResources/Images/d_IN_foldout.png");
+    --theme-image-foldout-act: resource("UIPackageResources/Images/d_IN_foldout_act.png");
+    --theme-image-foldout-focus: resource("UIPackageResources/Images/d_IN_foldout_focus.png");
+    --theme-image-foldout-on: resource("UIPackageResources/Images/d_IN_foldout_on.png");
+    --theme-image-foldout-on-act: resource("UIPackageResources/Images/d_IN_foldout_act_on.png");
+    --theme-image-foldout-on-focus: resource("UIPackageResources/Images/d_IN_foldout_focus_on.png");
+    --theme-image-pulldown: resource("UIPackageResources/Images/d_dropdown.png");
+    --theme-image-dropdown: resource("UIPackageResources/Images/d_dropdown.png");
+    --theme-image-search: resource("UIPackageResources/Images/d_search_icon.png");
+    --theme-image-popup-search: resource("UIPackageResources/Images/d_search_menu.png");
+    --theme-image-clear: resource("UIPackageResources/Images/d_clear_uielements.png");
+    --theme-image-checkmark: resource("UIPackageResources/Images/d_checkmark.png");
+    --theme-image-toolbar-breadcrumbs-item: resource("UIPackageResources/Images/d_breadcrump_mid.png");
+    --theme-image-toolbar-breadcrumbs-item-active: resource("UIPackageResources/Images/d_breadcrump_mid_act.png");
+    --theme-image-toolbar-breadcrumbs-first-item: resource("UIPackageResources/Images/d_breadcrump_left.png");
+    --theme-image-toolbar-breadcrumbs-first-item-active: resource("UIPackageResources/Images/d_breadcrump_left_act.png");
+    --theme-image-scroll-up: resource("UIPackageResources/Images/d_scrollup_uielements.png");
+    --theme-image-scroll-down: resource("UIPackageResources/Images/d_scrolldown_uielements.png");
+    --theme-image-scroll-left: resource("UIPackageResources/Images/d_scrollleft_uielements.png");
+    --theme-image-scroll-right: resource("UIPackageResources/Images/d_scrollright_uielements.png");
+    --theme-radio-button-checkmark-background-color: rgb(196, 196, 196);
+    --theme-view-background-color: rgb(56, 56, 56);
+    --theme-line-background-color-hover: rgb(48, 48, 48);
+    --theme-background-color-alternate: rgb(63, 63, 63);
+    --theme-line-selection-background-color: rgb(77, 77, 77);
+    --theme-line-selection-background-color-focus: rgb(44, 93, 135);
+    --theme-line-selection-text-color: rgb(255, 255, 255);
+    --progress-bar-back-background-color: rgb(48, 48, 48);
+    --progress-bar-back-border-color: rgb(37, 37, 37);
+    --progress-bar-progress-color: rgb(44, 93, 135);
+    --progress-bar-text-color: rgb(255, 255, 255);
+    --theme-base-field-label-mixed-values-color: rgba(210, 210, 210, 0.5);
+    --theme-tab-background: rgb(53, 53, 53);
+    --theme-header-bar-background-color: rgb(64, 64, 64);
+    --theme-header-bar-background-color-hover: rgb(69, 69, 69);
+    --theme-header-bar-border-color: rgb(40, 40, 40);
+}
+
+.unity-toolbar {
+    height: 21px;
+    flex-direction: row;
+    align-items: stretch;
+    white-space: nowrap;
+    background-color: rgb(60, 60, 60);
+    border-bottom-width: 1px;
+    border-color: rgb(35, 35, 35);
+    font-size: 12px;
+    flex-shrink: 0;
+}
+
+.unity-toolbar-toggle {
+    left: -1px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 1;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: -1px;
+    color: rgb(196, 196, 196);
+    background-color: rgb(60, 60, 60);
+    border-width: 1px;
+    border-color: rgb(35, 35, 35);
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+.unity-toolbar-toggle:hover:enabled {
+    color: rgb(189, 189, 189);
+    background-color: rgb(70, 70, 70);
+}
+
+.unity-toolbar-toggle:active {
+    color: rgb(196, 196, 196);
+    background-color: rgb(80, 80, 80);
+}
+
+.unity-toolbar-toggle:checked {
+    color: rgb(196, 196, 196);
+    background-color: rgb(80, 80, 80);
+}
+
+.unity-toolbar-toggle .unity-toggle__checkmark {
+    background-image: none;
+    padding-top: 0;
+    width: 0;
+    height: 0;
+    flex: 0 0 auto;
+    align-self: center;
+}
+
+.unity-toolbar-toggle .unity-toggle__input {
+    margin-bottom: 1px;
+}
+
+.unity-toolbar-button {
+    left: -1px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 1;
+    padding-bottom: 0;
+    color: rgb(196, 196, 196);
+    background-color: rgb(60, 60, 60);
+    border-width: 1px;
+    border-color: rgb(35, 35, 35);
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+.unity-toolbar-button:hover:enabled {
+    color: rgb(189, 189, 189);
+    background-color: rgb(70, 70, 70);
+}
+
+.unity-toolbar-button:active {
+    color: rgb(196, 196, 196);
+    background-color: rgb(80, 80, 80);
+}
+
+.unity-toolbar-button:focus {
+    border-color: rgb(123, 174, 250);
+}
+
+.unity-toolbar-menu {
+    margin-left: -1px;
+    flex-direction: row;
+    padding-left: 4px;
+    padding-right: 2px;
+    align-items: center;
+    color: rgb(196, 196, 196);
+    background-color: rgb(60, 60, 60);
+    border-width: 1px;
+    border-color: rgb(35, 35, 35);
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+.unity-toolbar-menu:hover:enabled {
+    color: rgb(189, 189, 189);
+    background-color: rgb(70, 70, 70);
+}
+
+.unity-toolbar-menu:active {
+    color: rgb(196, 196, 196);
+    background-color: rgb(80, 80, 80);
+}
+
+.unity-toolbar-menu__text {
+    overflow: hidden;
+    -unity-text-align: middle-left;
+    white-space: nowrap;
+    flex-grow: 1;
+}
+
+.unity-toolbar-menu__arrow {
+    background-image: resource("UIPackageResources/Images/d_dropdown.png");
+    width: 12px;
+    height: 12px;
+    align-self: center;
+}
+
+.unity-toolbar-spacer {
+    width: 6px;
+}
+
+.unity-toolbar-spacer--flexible {
+    flex: 1;
+    width: initial;
+}
+
+.unity-toolbar-breadcrumbs {
+    flex-direction: row;
+}
+
+.unity-toolbar-breadcrumbs__item {
+    padding-left: 20px;
+    padding-right: 15px;
+    padding-bottom: 0;
+    -unity-slice-left: 10;
+    -unity-slice-right: 10;
+    -unity-slice-top: 1;
+    -unity-slice-bottom: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    -unity-text-align: middle-center;
+    margin-left: -10px;
+    color: rgb(196, 196, 196);
+    background-image: resource("UIPackageResources/Images/d_breadcrump_mid.png");
+}
+
+.unity-toolbar-breadcrumbs__item:active {
+    background-image: resource("UIPackageResources/Images/d_breadcrump_mid_act.png");
+}
+
+.unity-toolbar-breadcrumbs__first-item {
+    -unity-slice-left: 1;
+    margin-left: 0;
+    padding-left: 10px;
+    background-image: resource("UIPackageResources/Images/d_breadcrump_left.png");
+}
+
+.unity-toolbar-breadcrumbs__first-item:active {
+    background-image: resource("UIPackageResources/Images/d_breadcrump_left_act.png");
+}
+
+.unity-icon-arrow-preview-packages-in-use {
+    background-image: resource("StyleSheets/Northstar/Images/dropdown_PreviewPackages.png");
+    width: 16px;
+    height: 16px;
+}
+
+.icon .unity-editor-toolbar-preview-package-in-use__icon {
+    background-image: resource("Icons/PreviewPackageInUse.png");
+    width: 16px;
+    height: 16px;
+}
+
+.icon .unity-editor-toolbar-element-preview-packages-in-use__label {
+    display: none;
+}
+
+.unity-binding__prefab-override-bar {
+    background-color: rgb(5, 147, 224);
+}
+
+.unity-binding--animation-animated {
+    -unity-background-image-tint-color: rgb(137, 216, 255);
+}
+
+.unity-binding--animation-animated > .unity-toggle__checkmark {
+    -unity-background-image-tint-color: rgb(137, 216, 255);
+}
+
+.unity-binding--animation-recorded {
+    -unity-background-image-tint-color: rgb(255, 127, 127);
+}
+
+.unity-binding--animation-recorded > .unity-toggle__checkmark {
+    -unity-background-image-tint-color: rgb(255, 127, 127);
+}
+
+.unity-binding--animation-candidate {
+    -unity-background-image-tint-color: rgb(255, 170, 109);
+}
+
+.unity-binding--animation-candidate > .unity-toggle__checkmark {
+    -unity-background-image-tint-color: rgb(255, 170, 109);
+}
+
+.unity-min-max-slider__dragger {
+    background-image: resource("UIPackageResources/Images/d_minmax_slider_thumb.png");
+}
+
+.unity-min-max-slider__input:active > .unity-min-max-slider__dragger:hover {
+    background-image: resource("UIPackageResources/Images/d_minmax_slider_thumb_act.png");
+}
+
+.unity-min-max-slider__input:focus > .unity-min-max-slider__dragger {
+    background-image: resource("UIPackageResources/Images/d_minmax_slider_thumb.png");
+}
+
+.unity-base-text-field {
+    --unity-cursor-color: rgb(180, 180, 180);
+}
+
+.unity-gradient-field__border {
+    border-color: rgb(29, 29, 29);
+}
+
+.unity-gradient-field__input:focus > .unity-gradient-field__border {
+    border-color: rgb(9, 17, 65);
+}

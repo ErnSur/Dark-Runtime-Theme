@@ -1,0 +1,7 @@
+{
+    "name": "com.quickeye.dark-runtime-theme",
+    "displayName": "Unity Editor Dark Theme for Runtime",
+    "version": "1.0.0",
+    "author": "Quick Eye",
+    "type": "library"
+  }

@@ -1,0 +1,11 @@
+
+@import url("Common Style Sheets/Editor Dark.uss");
+@import url("Common Style Sheets/Toolbar Dark.uss");
+
+
+:root{
+    -unity-font-definition: resource("UIPackageResources/Fonts/Inter/Inter-Regular");
+}
+.unity-theme-env-variables {
+    --current-font: resource("UIPackageResources/Fonts/Inter/Inter-Regular");
+}
