@@ -1,6 +1,6 @@
 
-@import url("Common Style Sheets/Editor Dark.uss");
-@import url("Common Style Sheets/Toolbar Dark.uss");
+@import url("Editor Dark.uss");
+@import url("Toolbar Dark.uss");
 
 
 :root{
