@@ -490,7 +490,7 @@
     border-bottom-width: 0;
 }
 
-.unity-toolbar-button:hover:enabled {
+.unity-toolbar-button:hover {
     color: rgb(189, 189, 189);
     background-color: rgb(70, 70, 70);
 }

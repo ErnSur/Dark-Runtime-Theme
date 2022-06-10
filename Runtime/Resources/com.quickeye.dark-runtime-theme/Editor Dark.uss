@@ -497,7 +497,7 @@
     font-size: 12px;
 }
 
-.unity-button:hover:enabled {
+.unity-button:hover {
     background-color: rgb(103, 103, 103);
 }
 
